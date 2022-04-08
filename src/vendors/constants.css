@@ -50,7 +50,7 @@
   font-family: var(--ff-header);
   font-weight: var(--fw-bold);
   font-size: var(--fs-700);
-  line-height: 0.83;
+  line-height: 1;
   text-transform: uppercase;
 }
 
