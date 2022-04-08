@@ -184,15 +184,17 @@
 
 .gallery {
   max-width: 1110px;
-  /* padding: 0 25px; */
   margin: 0 auto;
+  margin-bottom: 180px;
 }
 
 .your-day {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  gap: 7.8125rem;
 }
+
 .your-day__content {
   max-width: 350px;
 }
@@ -200,26 +202,42 @@
 .your-day__text {
   color: var(--clr-dark-gray);
   margin-top: 32px;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.your-day__image-container {
+  flex-basis: 100%;
+  flex: 2;
 }
 
 .your-day__image {
   height: 400px;
-  width: 100%;
-  object-fit: none;
+  object-fit: cover;
 }
 
 .inspired {
   margin-top: 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  max-height: 700px;
+  width: 100%;
+  gap: 30px;
+}
+
+.inspired__column_one {
+  flex-basis: auto;
+}
+
+.inspired__column_two {
+  flex-basis: auto;
 }
 
 .inspired__image-l {
+  max-width: 635px;
   height: 720px;
   width: 100%;
-  object-fit: none;
-  padding-right: 30px;
+  object-fit: cover;
 }
 
 .inspired__image-m {
@@ -230,12 +248,122 @@
 
 .inpired__content {
   margin-top: 30px;
-  max-height: 377px;
   background: var(--clr-almost-black);
   color: var(--clr-white);
-  padding: 65px 47px 64px 48px;
+  padding: 65px 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .inspired__title {
   margin-bottom: 32px;
+}
+
+.inspired__text {
+  max-width: 350px;
+}
+
+@media screen and (max-width: 960px) {
+  .gallery {
+    padding: 0 40px;
+  }
+
+  .your-day {
+    gap: 4.25rem;
+  }
+
+  .your-day__image {
+    width: 600px;
+  }
+
+  .your-day__content {
+    max-width: 223px;
+  }
+
+  .your-day__title {
+    font-size: 50px;
+  }
+  .your-day__text {
+    margin-top: 24px;
+    font-size: 18px;
+  }
+
+  .inspired {
+    gap: 11px;
+    margin-top: 11px;
+  }
+
+  .inpired__content {
+    margin-top: 11px;
+    padding: 85px 28px;
+    height: 396px;
+  }
+  .inspired__title {
+    margin-bottom: 24px;
+  }
+  .text-m {
+    font-size: 18px;
+  }
+
+  .heading-m {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gallery {
+    padding: 0 16px;
+  }
+
+  .your-day {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
+  }
+
+  .your-day__image {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .your-day__content {
+    max-width: 600px;
+  }
+
+  .your-day__title {
+    margin-top: 25px;
+  }
+
+  .your-day__title span {
+    display: block;
+  }
+  .your-day__text {
+    margin-top: 21px;
+  }
+
+  .inspired {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .inspired__image-l {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .inspired__image-m {
+    height: 313px;
+    object-fit: cover;
+  }
+
+  .inpired__content {
+    margin-top: 16px;
+    padding: 48px 24px;
+    height: 293px;
+  }
 }
