@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  scrollbar-color: var(--clr-purple) #f3ede7;
+  scrollbar-color: var(--clr-gold) #f3ede7;
   scrollbar-width: thin;
 }
 
@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-purple);
+  background: var(--clr-gold);
 }
 
 ::-webkit-scrollbar-corner {
