@@ -47,14 +47,21 @@
 
 @media screen and (max-width: 550px) {
   .footer__wrapper {
+    width: min(90%, 1110px);
     display: flex;
     flex-direction: column;
     padding: 48px 0;
   }
 
+  .footer__title {
+    font-size: 24px;
+    max-width: 114px;
+  }
+
   .footer__text {
     max-width: 100%;
     font-size: 1rem;
+    line-height: 1.625;
     margin: 38px 0;
   }
 }
