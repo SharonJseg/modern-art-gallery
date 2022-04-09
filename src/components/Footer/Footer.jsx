@@ -2,10 +2,19 @@ import React from 'react';
 import './Footer.css';
 
 import Icon from '../Icon/Icon';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+
   return (
-    <footer className='footer'>
+    <footer
+      className={
+        location.pathname === '/modern-art-gallery/'
+          ? 'footer'
+          : 'footer__location'
+      }
+    >
       <div className='footer__wrapper'>
         <h3 className='footer__title heading-s'>Modern art gallery</h3>
         <p className='footer__text text-s'>
@@ -14,7 +23,14 @@ const Footer = () => {
         </p>
         <ul className='footer__social-icons'>
           <li>
-            <a to='/' className='social-icon__button'>
+            <a
+              to='/'
+              className={
+                location.pathname === '/modern-art-gallery/'
+                  ? 'social-icon__button'
+                  : 'social-icon__button_location'
+              }
+            >
               <Icon
                 name='facebook'
                 height='20'
@@ -23,9 +39,15 @@ const Footer = () => {
               />
             </a>
           </li>
-
           <li>
-            <a to='/' className='social-icon__button'>
+            <a
+              to='/'
+              className={
+                location.pathname === '/modern-art-gallery/'
+                  ? 'social-icon__button'
+                  : 'social-icon__button_location'
+              }
+            >
               <Icon
                 name='twitter'
                 height='20'
@@ -35,7 +57,14 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a to='/' className='social-icon__button'>
+            <a
+              to='/'
+              className={
+                location.pathname === '/modern-art-gallery/'
+                  ? 'social-icon__button'
+                  : 'social-icon__button_location'
+              }
+            >
               <Icon
                 name='instagram'
                 height='20'

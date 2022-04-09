@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
 
+import { Link } from 'react-router-dom';
+
 import arrowRight from '../../images/icon-arrow-right.svg';
 import heroImage from '../../images/desktop/image-hero@2x.jpg';
 import heroImageTablet from '../../images/tablet/image-hero@2x.jpg';
@@ -24,10 +26,10 @@ const Header = () => {
             from a spark of inspiration. Will these pieces inspire you? Visit us
             and find out.
           </p>
-          <a href='#' className='hero__button'>
+          <Link to='/modern-art-gallery/location' className='hero__button'>
             our location
             <img src={arrowRight} alt='' className='hero__button-icon' />
-          </a>
+          </Link>
         </div>
       </section>
     </header>

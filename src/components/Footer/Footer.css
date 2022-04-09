@@ -3,6 +3,11 @@
   color: var(--clr-white);
 }
 
+.footer__location {
+  background-color: var(--clr-gold);
+  color: var(--clr-almost-black);
+}
+
 .footer__wrapper {
   width: min(90%, 1110px);
   margin: 0 auto;
@@ -32,6 +37,16 @@
 
 .social-icon__button:hover {
   color: var(--clr-gold);
+  cursor: pointer;
+}
+
+.social-icon__button_location {
+  color: var(--clr-almost-black);
+  cursor: pointer;
+}
+
+.social-icon__button_location:hover {
+  color: var(--clr-white);
   cursor: pointer;
 }
 
